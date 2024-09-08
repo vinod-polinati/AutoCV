@@ -1,4 +1,4 @@
-himport os
+import os
 import streamlit as st
 from fpdf import FPDF
 from dotenv import load_dotenv
