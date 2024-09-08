@@ -39,7 +39,7 @@ def collect_input():
 def generate_cover_letter(job_description, user_details, company_name, education):
     api_key = os.getenv("GROQ_API_KEY")
     if not api_key:
-        st.error("GROQ API Key not found in environment variables.")
+        st.error("Key not found in environment variables.")
         return ""
 
     client = Groq(api_key=api_key)
