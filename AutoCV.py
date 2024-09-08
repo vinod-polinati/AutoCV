@@ -43,7 +43,7 @@ def generate_cover_letter(job_description, user_details, company_name, education
         return ""
 
     client = Groq(api_key=api_key)
-    prompt = f"Generate a cover letter for the following job description give me onlu the cover letter no other text at the end or starting: {job_description} and my details: {user_details} and my education {education} and company name: {company_name} start with dear hiring manager and add use the given details such as comany name , education and all the deatails"
+    prompt = f"Generate a cover letter for the following job description give me onlu the cover letter no other text at the end or starting: {job_description} and my details: {user_details} and my education {education} and company name: {company_name} start with dear hiring manager and add use the given details such as comany name , education and all the deatails in the end after sincierly add my name "
     
     try:
         chat_completion = client.chat.completions.create(
