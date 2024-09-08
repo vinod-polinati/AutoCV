@@ -61,14 +61,3 @@ def create_pdf(text, filename):
     pdf.set_font("Arial", size=font_size)
     pdf.multi_cell(0, 5, text.encode('latin-1', 'replace').decode('latin-1'))
     pdf.output(filename)
-    
-def main():
-    job_description, user_details, company_name, university = collect_input()
-    cover_letter = generate_cover_letter(job_description, user_details, company_name, university)
-    print("Generated Cover Letter:\n")
-    print(cover_letter)
-    create_pdf(cover_letter, "cover_letter.pdf")
-    print("Cover letter generated and saved as cover_letter.pdf")
-
-if __name__ == '__main__':
-    main()
