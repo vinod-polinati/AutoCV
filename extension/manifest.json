@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "AI Cover Letter Generator",
+    "version": "1.0",
+    "permissions": ["activeTab"],
+    "background": { "service_worker": "background.js" },
+    "content_scripts": [{
+      "matches": ["*://*.linkedin.com/*", "*://*.indeed.com/*"],
+      "js": ["content.js"]
+    }],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.jpeg",
+        "48": "icon.jpeg",
+        "128": "icon.jpeg"
+      }
+    }
+  }
+  

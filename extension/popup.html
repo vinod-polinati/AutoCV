@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AI Cover Letter Generator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="popup.js" defer></script>
+</head>
+<body>
+    <h2>Cover Letter Generator</h2>
+
+    <label>Job Description:</label>
+    <textarea id="job-description"></textarea>
+
+    <label>Company Name:</label>
+    <input type="text" id="company-name">
+
+    <label>Your Name:</label>
+    <input type="text" id="user-name">
+
+    <label>Email Address:</label>
+    <input type="text" id="email">
+
+    <label>Phone Number:</label>
+    <input type="text" id="phone">
+
+    <label>Mailing Address:</label>
+    <input type="text" id="mail-address">
+
+    <label>Experience:</label>
+    <input type="text" id="experience">
+
+    <label>University Name:</label>
+    <input type="text" id="uni-name">
+
+    <label>Degree:</label>
+    <input type="text" id="degree">
+
+    <label>Major:</label>
+    <input type="text" id="major">
+
+    <button id="generate">Generate Cover Letter</button>
+    <button id="download" disabled>Download PDF</button>  <!-- Initially disabled -->
+
+    <h3>Generated Cover Letter:</h3>
+    <pre id="cover-letter"></pre>  <!-- Using <pre> for better formatting -->
+
+</body>
+</html>
